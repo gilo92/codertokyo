@@ -1,0 +1,21 @@
+/**
+ * 1. Vi?t hàm sayHello làm nhi?m v? log ra màn hình 'I love Coders.Tokyo'
+ * 2. Vi?t hàm countAndDo nh?n vào tham s? là 1 hàm. Hàm này log ra màn hình t? 1 d?n 10 dùng vòng l?p for. Sau khi log xong, ch?y hàm du?c truy?n vào ? tham s?
+ * 3. Ki?m tra 2 hàm trên b?ng cách: 
+ *   countAndDo(sayHello)
+ */
+
+function sayHello() {
+  console.log('I love Coders.Tokyo');
+}
+
+function countAndDo(callback) {
+  for (i=0; i<10;i++)
+  {
+    console.log(i);
+    
+  }
+  callback();
+}
+
+countAndDo(sayHello)

@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Space Clicker</title>
+	<p id="count"></p>
+</head>
+
+<body>
+	<input type="text" id="name" placeholder="Enter your name" />
+	<button id="sayhi">Say Hi!</button>
+	<script type="text/javascript">
+		var hiBtn = document.getElementById('sayhi');
+		hiBtn.addEventListener('click', sayhi);
+
+		function sayhi() {
+			var name = document.getElementById('name').value;
+			alert("Hi " + name);
+		}
+	</script>
+</body></html>

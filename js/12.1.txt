@@ -1,0 +1,6 @@
+var a = [1, 2];
+var b = [1, 2];
+console.log(a === b);
+// Ch?y chuong trình và tìm hi?u vì sao k?t qu? l?i là false m?c dù giá tr? c?a 2 array có v? gi?ng nhau. Vi?t câu tr? l?i ? du?i dây.
+
+//so sanh 2 object la so sanh 2 vi tri trong bo nho nen false

@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>Space Clicker</title>
+	<p id="count"></p>
+</head>
+
+<body>
+	<input type="text" id="searchBox" placeholder="Search..." />
+	<button>Search</button>
+	<button onclick="document.getElementById('searchBox').value = ''">Clear</button>
+</body></html>

@@ -1,0 +1,40 @@
+/* Hãy viết một hàm để tìm một số có số lần lặp lại nhiều nhất trong một dãy các số nguyên.
+
+Input: dãy số
+Output: 1 dãy số bao gồm các số có số lần lặp lại nhiều nhất
+
+ví dụ:
+Input: [1,2,3,4,1,2,2,1]
+Output: [1,2]*/
+
+function findMostFrequent(arr) {
+// Viêt hàm tại đây!
+  var k = {};
+  //count number of appearance
+  for (i=0; i< arr.length; i++) {
+      if (k[arr[i]] ) {
+        k[arr[i]] += 1;
+      }
+      else {
+        k[arr[i]] = 1;
+      }  
+  }
+  console.log(k);
+  //find max value key
+  var max = 0;
+  for (var pro in k) {
+    max = (max < parseFloat(k[pro]) ? parseFloat(k[pro]) : max);
+  }
+  console.log(max);
+  
+  result =[];
+  for (var x in k) {
+    if (k[x] == max) {
+      result.push(parseInt(x));
+    }
+  }
+  return result;
+  //
+}
+
+findMostFrequent([1,2,3,4,1,2,2])

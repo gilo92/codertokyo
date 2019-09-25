@@ -1,0 +1,15 @@
+/**
+ * Chỉ sử dụng vòng lặp for và if else để hoàn thiện hàm tìm số lớn nhất trong 1 array
+ */
+
+function max(arr) {
+  var max =0;
+  for ( var i of arr){
+    if (i > max){
+      max = i;
+    }
+  }  
+  console.log(max);
+}
+
+max([5, 6, 9]); // 9

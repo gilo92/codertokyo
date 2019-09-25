@@ -1,0 +1,6 @@
+/**
+ * Tìm hiểu tại sao các thẻ liên quan đến CSS thường được đặt trong <head> còn JavaScript lại đặt ở cuối của <body> (trước khi đóng </body>)
+ * Giải thích theo ý hiểu của bạn ở dưới, không hiểu có thể hỏi trên Coders.Tokyo Slack hoặc JsLand 
+ */
+
+// because CSS is the outlook of the web so It should be loaded first, hence place on the head. JS should be loaded last so put in the bottom of the body

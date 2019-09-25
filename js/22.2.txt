@@ -1,0 +1,28 @@
+// Count the occurrences of each element inside an array using reduce
+function countOccurrences(arr) {
+   var countedelement = arr.reduce(function(allelement, element){
+     if (element in allelement)
+     {
+       allelement[element]++;
+       console.log(allelement);
+     }
+     else
+     {
+       allelement[element] =1;
+       console.log(allelement);
+     } 
+     return allelement;
+     
+     console.log(countedelement);
+     
+   }, {})
+   
+   console.log(countedelement);
+}
+
+countOccurrences(['a', 'b', 'c', 'b', 'a']);
+// { 
+//   a: 2, 
+//   b: 2, 
+//   c: 1 
+// }

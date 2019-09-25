@@ -1,0 +1,48 @@
+var fs = require('fs');
+var axios = require('axios');
+
+// fs.readFile(
+//   './data.json', 
+//   { encoding: 'utf8'}, 
+//   function(err, data) {
+//     console.log('Data loaded from disk', data);
+
+//     axios.get('https://jsonplaceholder.typicode.com/todos/1')
+//       .then(function(res) {
+//         console.log('Data downloaded from url', res.data);
+//       });
+//   }
+// );
+
+/**
+ * S? d?ng async await k?t h?p v?i Promise d? vi?t l?i do?n code trên. G?i ý: Vi?t l?i 1 async function làm 2 vi?c trên và ch?y th?
+ */
+
+function readfilePromise(path) {
+  return new Promise(function (resolve, reject){
+    fs.readFile(path, {encoding: 'utf8'}, function(err,data){
+      if(err)
+      {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    })
+  })
+}
+
+function download(url) {
+   axios.get(url)
+    .then(function(res) {
+      console.log('Data downloaded from url', res.data);
+    })
+  }  
+
+async function run() {
+  var result = await readfilePromise('./data.json');
+  console.log(result);
+  var result2 = await download('https://jsonplaceholder.typicode.com/todos/1');
+  console.log(result2);
+}
+
+run();

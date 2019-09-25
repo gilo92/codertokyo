@@ -1,0 +1,23 @@
+/**
+ * 1. Vi?t hàm double nh?n vào 1 s? b?t kì, hi?n th? ra s? dó nhân dôi
+ * 2. Vi?t hàm sumAndDo nh?n vào 1 array và 1 callback function. Hàm sumAndDo làm nhi?m v? tính t?ng array dó, sau dó g?i callback function v?i tham s? là k?t qu? t?ng v?a tính
+ */
+
+function double(num) {
+  console.log(num*2);
+}
+
+function sumAndDo(nums, callback) {
+  var tong=0;
+  if (Array.isArray(nums) == true)
+  {
+    for (i=0; i<nums.length; i++)
+    {
+      tong = tong + nums[i];
+    }
+  }
+  console.log(tong);
+  callback(tong);
+}
+
+sumAndDo([1, 2, 3], double);

@@ -1,0 +1,16 @@
+var a = 1;
+
+var b = {
+  a: 2,
+  foo: function() {
+    console.log(this.a);
+  }
+};
+
+b.foo();
+
+var fooCopy = b.foo;
+fooCopy();
+// Chạy code và giải thích vì sao kết quả dòng 10 khác dòng 13
+//b.foo will determine the variable by look up the local scope within b, which is resulted value 2.
+//fooCopy only = b.foo, so when It runs It will not know the value a:2, It will then lookup the parent scope which will then return value 1

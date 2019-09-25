@@ -1,0 +1,22 @@
+var Circle = function(x,y,radius) {
+  this.x = x;
+  this.y = y;
+  this.radius = radius;
+}
+
+Circle.prototype.isOverlapped = function(c) {
+  var d = Math.sqrt(Math.pow(this.x - c.x, 2) + Math.pow(this.y - c.y, 2));
+  if (d == this.radius + c.radius) {
+    return 0;
+  }
+  if (d < this.radius + c.radius) {
+    return -1;
+  }
+  return 1;
+}
+
+
+
+
+
+module.exports = Circle;

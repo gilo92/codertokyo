@@ -1,0 +1,17 @@
+/**
+ * S? d?ng vòng l?p for...of d? tính tích c?a các ph?n t? trong m?t array g?m các s?
+ */
+var c= 1;
+
+function multiply(arr) {
+  for ( var i of arr)
+  {
+    
+    c = c* i;
+    console.log(c);
+  }
+  console.log(c);
+}
+
+console.log(multiply([2, 3, 4])); // expect: 24
+

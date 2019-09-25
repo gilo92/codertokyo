@@ -1,0 +1,39 @@
+/**
+ * S? d?ng vòng l?p for...in d? in ra t?t c? các key trong object sau, in ra c? các key c?a các nested object (object con l?ng bên trong object l?n)
+ * G?i ý: dây là bài t?p khó, b?n nên tìm hi?u v? recursive tru?c
+ */
+
+var apartment = {
+  bedroom: {
+    area: 20,
+    bed: {
+      type: 'twin-bed',
+      price: 100
+    }
+  }
+};
+
+for ( var room in apartment)
+{
+  console.log()
+}
+
+/**
+ * K?t qu? mong mu?n:
+ * bedroom
+ * area
+ * bed
+ * type
+ * price
+ * Chú ý: không c?n hi?n th? ra dúng th? t? nhu trên
+ */
+
+function dequy(obj) {
+for(var key in obj) {
+console.log(key);
+if(typeof obj[key] === 'object'){
+dequy(obj[key]);
+}
+}
+};
+dequy(apartment);

@@ -1,0 +1,79 @@
+/**
+ * Thiết kế database cho 1 hệ thống quản lý thư viện sách, cho biết thư viện này có hàng trăm giá sách khác nhau, sách được để ở bất kì giá nào không theo danh mục nào.
+ * Mỗi cuốn sách có 1 mã khác nhau.
+ * Hệ thống cho phép đăng ký người dùng mới, một người có thể mượn nhiều sách khác nhau trong một khoảng thời gian hữu hạn.
+ * Hệ thống có thể lưu lịch sử ai đã mượn sách nào, bắt đầu mượn từ bao lâu, trả lúc nào.
+ * Hệ thống có lưu lại số ngày quá hạn tổng cộng của 1 người dùng, ví dụ sách A quá 2 ngày, sách B quá 3 ngày -> tổng 5 ngày
+ */
+
+var allowexpire = 90;
+
+books = [
+  {
+    bookid: 0,
+    name : 'lord of the ring'
+  },
+  {
+    bookid: 1,
+    name: 'back to the wild'
+  }
+]
+
+Users = [
+  {
+    userid: 0,
+    name: 'duy',
+    phone: 01234
+  }
+]
+
+Borrow = [
+  {
+    bookid: 0,
+    userid: 0,
+    borrowdate: '19-04-2019',
+    expiredate: '28-08-2020',
+    returndate: null
+  }
+]
+
+Expire = [
+  {
+    userid: 0,
+    expireday: 20-04-2019
+  }
+]
+
+//expireday = tong expire cua cac sach/ 1 userid
+function expirecount(user) {
+  var userobject = Users.find(function(x) {
+    return x.name === user;
+  })
+  console.log(userobject);
+  var bookofuser = Borrow.filter(function(x) {
+    return Borrow.userid = userobject
+  })
+  console.log(bookofuser);
+  count=0;
+  foreach (bookofuser) {
+    if (var diff = (expiredate - borrowdate) >0) {
+      count = count + diff;
+    }
+  }
+  return count;
+}
+
+function borrow {
+  if (count < allowexpire)
+  {
+    //code borrow here
+  }
+  else {
+    console.log('You have to return book to borrow more');
+  }
+  
+}
+
+expirecount('duy');
+
+

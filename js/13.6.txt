@@ -1,0 +1,26 @@
+mocha.setup('bdd');
+var expect = chai.expect;
+
+function has(array, value) {
+  // s? d?ng vòng l?p for...of vi?t hàm has d? ki?m tra xem array có t?n t?i 1 giá tr? xác d?nh hay không
+  // Tham s?:
+  //	- array: m?ng c?n ki?m tra
+  //	- value: giá tr? c?n ki?m tra xem có t?n t?i trong array không
+  // Return:
+  //	- true n?u có t?n t?i
+  //	- false n?u không t?n t?i
+  return array.includes(value);
+  
+}
+
+describe('has', function () {
+	it('should return true if value exists', function () {
+    expect(has([1,2,3], 1)).to.equal(true);
+  });
+  
+  it('should return false if value does not exist', function() {
+  	expect(has([1,2,3], 4)).to.equal(false);
+  });
+});
+
+mocha.run();

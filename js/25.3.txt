@@ -1,0 +1,28 @@
+/* 
+  Viết hàm lengthObj để in ra độ dài của một đối tượng
+*/
+/*
+function lengthObj(obj) {
+  var i=0;
+  for (var prop in obj)
+    if ( prop != undefined )
+    {
+      i++;
+      console.log(prop);
+    }
+    console.log(i);
+}
+*/
+
+function lengthObj(obj){
+  var result = Object.keys(obj);
+  return result.length;
+}
+
+var student = {
+  name: "Jerry", 
+  age: 14,
+  role: "student"
+}
+
+lengthObj(student); // length: 3

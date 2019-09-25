@@ -1,0 +1,6 @@
+/**
+ * Đọc và dịch các method đã học từ MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+ * Lấy ví dụ cho các trường hợp input khác nhau của mỗi method
+ * Mục đích của bài tập này: Giúp bạn học cách tự tra cứu, đọc tài liệu.
+ * Đây là một kĩ năng không thể thiếu của 1 developer.
+ */

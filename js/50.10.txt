@@ -1,0 +1,13 @@
+function nearestTo100(a, b){
+	a1 = Math.abs(a-100);
+  b1 = Math.abs(b-100);
+  if (a1> b1) {
+  	return b;
+  }
+  else if (b1>a1) {
+  	return a;
+  }
+  else {
+  	return undefined;
+  }
+}

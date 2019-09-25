@@ -1,0 +1,15 @@
+/**
+ * Viết hàm diff trả về số ngày chênh lệch giữa 2 ngày bất kì
+ */
+function diff(fromDate, toDate) {
+  elapsed = toDate.getTime() - fromDate.getTime();
+  console.log(elapsed/1000/3600/24);
+  result = Math.round(elapsed/1000/3600/24);
+  console.log(result);
+}
+
+var start = new Date('2018/05/17');
+var end = new Date();
+
+console.log(diff(start, end));
+

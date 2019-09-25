@@ -1,0 +1,41 @@
+var a = {
+  foo: 'bar'
+};
+
+var b = {
+  foo: 'bar'
+};
+
+console.log(a === b);
+// Ch?y chuong trình và tìm hi?u vì sao k?t qu? l?i là false m?c dù giá tr? c?a 2 object có v? gi?ng nhau. Vi?t câu tr? l?i ? du?i dây.
+
+/* vi 2 object khi so sanh se so sanh qua tham chieu, so sanh 2 object se thanh so sanh vi tri cua 2 object nen bang false
+
+de so sanh ta dung ham duoi day
+
+function isEqual(objA, objB) {
+// T?o các m?ng ch?a tên các property
+var aProps = Object.getOwnPropertyNames(objA);
+var bProps = Object.getOwnPropertyNames(objB);
+// N?u d? dài c?a m?ng không b?ng nhau,
+// thì 2 objects dó không b?nh nhau.
+if (aProps.length != bProps.length) {
+    return false;
+}
+
+for (var i = 0; i < aProps.length; i++) {
+     var propName = aProps[i];          
+      // N?u giá tr? c?a cùng m?t property mà không b?ng nhau,
+      // thì 2 objects không b?ng nhau.
+     if (objA[propName] !== objB[propName]) {             
+         return false;         
+     }     
+}
+// N?u code ch?y d?n dây,
+// t?c là 2 objects du?c tính l? b?ng nhau.
+return true; 
+}  
+// Output: true
+console.log(isEqual(objA, objB));
+
+*/

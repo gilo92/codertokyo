@@ -1,0 +1,6 @@
+// viết hàm lấy ra giá trị lớn nhất trong 3 số nhập vào
+function findMax(a,b,c){
+	return Math.max(a,b,c);
+}
+
+findMax(1,2,3);

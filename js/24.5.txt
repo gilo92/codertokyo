@@ -1,0 +1,13 @@
+/* 
+  Viết hàm circleMachine() tính chu vi và diện tích hình tròn khi biết bán kính
+*/
+
+function circleMachine(r) {
+  var chuvi, area =0;
+  console.log('chu vi la', 2*Math.PI * r);
+  console.log('dien tich la', Math.PI * r *r);
+}
+
+circleMachine(3);
+// Chu vi: 18.85
+// Diện tích: 28.27

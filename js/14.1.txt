@@ -1,0 +1,5 @@
+/**
+ * Ði?m khác nhau gi?a 2 vòng l?p for...of và for...in, vi?t code ví d?
+ */
+
+//for of dung cho mang for in dung cho object

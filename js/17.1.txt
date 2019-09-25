@@ -1,0 +1,11 @@
+
+var numbers = [10, 5, 8];
+// Gợi ý: numbers.map... (tự viết tiếp)
+
+var result = numbers.map(function(x)
+{
+  return x*x*x;
+});
+
+
+result;

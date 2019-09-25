@@ -1,0 +1,6 @@
+// Viết hàm lấy extension của một file
+
+function getExtensionFilename(filename) {
+	var result = filename.split('.').pop();
+	return result;
+}

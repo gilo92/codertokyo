@@ -1,0 +1,25 @@
+From 59c53f1fb0204239ae12ea145ff25c80ef6e05c6 Mon Sep 17 00:00:00 2001
+From: gilo92 <ducduy288@gmail.com>
+Date: Thu, 21 Mar 2019 18:08:32 +0700
+Subject: [PATCH 1/2] Create 15.2.txt
+
+---
+ js/15.2.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 js/15.2.txt
+
+diff --git a/js/15.2.txt b/js/15.2.txt
+new file mode 100644
+index 0000000..67c2163
+--- /dev/null
++++ b/js/15.2.txt
+@@ -0,0 +1,6 @@
++/**
++ * Đọc và dịch các method đã học từ MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
++ * Lấy ví dụ cho các trường hợp input khác nhau của mỗi method
++ * Mục đích của bài tập này: Giúp bạn học cách tự tra cứu, đọc tài liệu.
++ * Đây là một kĩ năng không thể thiếu của 1 developer.
++ */
+-- 
+2.21.0.windows.1
+

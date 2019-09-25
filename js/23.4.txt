@@ -1,0 +1,18 @@
+// Sort an array alphabetically
+function alphabetical(arr) {
+  var result = arr.sort(function (x,y){
+    if ( x.toUpperCase() < y.toUpperCase() )
+    {
+      return -1;
+    }
+    if ( x.toUpperCase() > y.toUpperCase() )
+    {
+      return 1;
+    }
+    return 0;
+  })
+  console.log(result);
+}
+
+alphabetical(["dog", "wolf", "by", "family", "eaten"]) 
+// ["by", "dog", "eaten", "family", "wolf"] 

@@ -1,0 +1,32 @@
+/*
+Hãy viết một hàm để kiểm tra xem có thể sắp xếp các kí tự của 1 chuỗi String cho trước thành 1 chuỗi String cho trước khác không?
+
+Input: 2 chuỗi String
+Output: True hoặc False
+
+ví dụ:
+
+Input: abc cba
+Output: True
+
+Input: abx abb
+Output: False
+*/
+
+function rearrangeChar(str1, str2) {
+
+  var first_set = str1.split(''),
+      second_set = str2.split(''),
+      result = true;
+
+  first_set.sort();
+  second_set.sort();
+
+  for (var i = 0; i < Math.max(first_set.length, second_set.length); i++) {
+    if (first_set[i] !== second_set[i]) {
+      result = false;
+    }
+  }
+
+  return result;
+}

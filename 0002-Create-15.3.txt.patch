@@ -1,0 +1,35 @@
+From 0e629cc97c88462eae211d2538fdce0b77ef5a0b Mon Sep 17 00:00:00 2001
+From: gilo92 <ducduy288@gmail.com>
+Date: Fri, 22 Mar 2019 13:32:48 +0700
+Subject: [PATCH 2/2] Create 15.3.txt
+
+---
+ js/15.3.txt | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+ create mode 100644 js/15.3.txt
+
+diff --git a/js/15.3.txt b/js/15.3.txt
+new file mode 100644
+index 0000000..731aabc
+--- /dev/null
++++ b/js/15.3.txt
+@@ -0,0 +1,16 @@
++/** Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array. 
++ * 
++ * Bắt đầu từ bài này các câu hỏi sẽ xuất hiện bằng tiếng Anh nhiều hơn.
++ * Đây cũng là một kĩ năng không thể thiếu của develop vì: các nguồn tra cứu tốt đa phần là tiếng Anh, ví dụ như stackoverflow.com
++*/
++
++function first(arr, n) {
++  var length = arr.length;
++  for (i=0 ; i< length-n; i++)
++  {
++    arr.pop();
++  }
++  return arr;
++}
++
++console.log(first([1, 2, 3], 2)); // expect [1, 2]
+-- 
+2.21.0.windows.1
+

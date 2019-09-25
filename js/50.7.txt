@@ -1,0 +1,28 @@
+//Viêt 1 function kiểm tra số lương kí tự 'p' và 't' của 1 chuỗi có bằng nhau hay không
+//=============================
+//input : string
+//output : true or false
+//=============================
+
+function equal_pt(str){ 
+  var resultt=resultp=0;
+  if (str == null || str =="") {
+    return 'empty string';
+  }  
+  for (var i of str) {
+    if (i == "t") {
+      resultt = resultt +1;
+    }
+    else if (i == "p") {
+      resultp = resultp +1;
+    }
+  }
+  console.log(resultt);
+  console.log(resultp);
+  if (resultt==resultp) {
+    return true;
+  } 
+  else {
+    return false;
+  }
+}

@@ -1,0 +1,10 @@
+// viết hàm Kiểm tra xem một chuỗi bắt đầu bằng "Java" hay không 
+function startWith(str){
+	var opp = "Java";
+  if (str.startsWith(opp)) {
+  	return true;
+  }
+  else {
+  	return false;
+  }
+}

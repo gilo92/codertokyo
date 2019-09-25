@@ -1,0 +1,72 @@
+//thiet ke database for e magazine.
+category= [
+  {
+    id: 0
+    name: 'phone',
+  },
+  {
+    id: 1
+    name: 'watch',
+  },
+  {
+    id: 2
+    name: 'laptop',
+  }
+]
+
+product = [
+  {
+    id: 0
+    name: 'ip6'
+    description: 'new',
+    price: 3000,
+    categoryid: 0
+  },
+  {
+    id: 1
+    name: 'ip7'
+    description: 'new',
+    price: 6000,
+    categoryid: 0
+  },
+  {
+    id: 2
+    name: 'invicta'
+    description: 'new',
+    price: 1000,
+    categoryid: 1
+  },
+  {
+    id: 3
+    name: 'dell vostro'
+    description: 'new',
+    price: 13000,
+    categoryid: 2
+  },
+  {
+    id: 4
+    name: 'hp xs'
+    description: 'new',
+    price: 14000,
+    categoryid: 2
+  }
+]
+
+Order = [
+  {
+    orderid: 0,
+    productid: 2
+    date: 2019,
+    ispayed: true,
+    customerid: 0
+  }
+]
+
+Customer =[
+  {
+    customerid: 0,
+    name: duy,
+    address: 'ham long',
+    phone: 0943
+  }
+]

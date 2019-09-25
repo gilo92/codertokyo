@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Space Clicker</title>
+	<p id="count"></p>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var count = 0;
+	var counter = document.getElementById('count');
+	counter.innerHTML = count;
+
+	function add() {
+		count= count+1;
+		var counter = document.getElementById('count');
+		counter.innerHTML = count;
+	}
+    </script>
+    <button type="button" onClick="add()">Click me</button>
+    <p id="count"></p>
+
+</body></html>

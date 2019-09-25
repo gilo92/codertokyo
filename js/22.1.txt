@@ -1,0 +1,16 @@
+// Given an array of arrays, flatten them into a single array
+function flatten(arr) {
+    var flatten_arr = arr.reduce(function (mem1, mem2){
+       return mem1.concat(mem2);
+    })
+    return flatten_arr;
+    console.log(flatten_arr);
+}
+
+var arrays = [
+    ["1", "2", "3"],
+    [true],
+    [4, 5, 6]
+];
+
+flatten(arrays) // ["1", "2", "3", true, 4, 5, 6];

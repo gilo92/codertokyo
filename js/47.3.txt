@@ -1,0 +1,13 @@
+/**
+ * Viết hàm subtractDays trả về 1 ngày trong quá khứ cách ngày được truyền vào n ngày
+ */
+
+const moment = require('moment');
+
+function subtractDays(date, n) {
+  var result = moment(date).subtract(n, 'days');
+  var convert = moment(result).format('YYYY/MM/DD');
+  console.log(convert);
+}
+
+subtractDays(new Date(), 5);

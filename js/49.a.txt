@@ -1,0 +1,42 @@
+//thiet ke database for e magazine.
+category= [
+  {
+    id: 0
+    name: world,
+  },
+  {
+    id: 1
+    name: 'business',
+  },
+  {
+    id: 2
+    name: 'sport',
+  }
+  {
+    id: 3
+    name: 'entertaiment',
+  }
+]
+
+news = [
+  {
+    title: 'world1',
+    content: 'mexico rebellation',
+    categoryid: 0
+  },
+  {
+    title: 'business1',
+    content: 'vingroup bus start',
+    categoryid: 1
+  },
+  {
+    title: 'sport1',
+    content: 'ars beat villa 3 - 1',
+    categoryid: 2
+  },
+  {
+    title: 'entertain1',
+    content: 'ri out with no accusation',
+    categoryid: 3
+  }
+]

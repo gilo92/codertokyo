@@ -1,0 +1,31 @@
+/**
+ * Khai báo bi?n `rectangle` là 1 object g?m có các property:
+ * - width: chi?u r?ng, là 1 s? b?t kì
+ * - height: chi?u cao, là 1 s? b?t kì
+ * Vi?t các method:
+ * - getWidth: tr? v? chi?u r?ng
+ * - getHeight: tr? v? chi?u cao
+ * - getArea: tr? v? di?n tích
+ */
+
+var rectangle = {
+  width : 8,
+  height : 8,
+  getwidth : function() 
+  {
+    console.log(this.width);
+  },
+  getheight : function()
+  {
+    console.log(this.height);
+  },
+  getarea : function()
+  {
+    console.log(this.width * this.height)
+  }
+};
+
+
+rectangle.getwidth();
+rectangle.getheight();
+rectangle.getarea();

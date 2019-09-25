@@ -1,0 +1,19 @@
+/**
+ * Tính số ms chênh lệch giữa 2 date object bất kì
+ */
+
+const moment = require('moment');
+
+function diffMs(a, b) {
+  var x = moment(a);
+  console.log(x);
+  var y = moment(b);
+  console.log(y);
+  result = x.diff(y);
+  console.log(result);
+}
+// viết ví dụ để kiểm tra
+
+diffMs(new Date(),[2007, 0, 29])
+
+diffMs(new Date(),"2007-01-29")

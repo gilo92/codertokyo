@@ -1,0 +1,9 @@
+function newString(str, n){
+//make New string from n character top and bottom from old string
+  if (n <= str.length) {
+    str1 = str.slice(0, n);
+    str2 = str.slice(-n);
+    result = str1.concat(str2);
+    return result;
+  }
+}

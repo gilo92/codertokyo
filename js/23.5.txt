@@ -1,0 +1,27 @@
+// Sort the objects in the array by age
+function byAge(arr){
+  var result = [];
+  result = arr.sort(function(x,y){
+    return x.age - y.age;
+  })
+  console.log(result);
+}
+
+byAge([
+  {
+    name: "Quiet Samurai",
+    age: 22
+  },
+  {
+    name: "Arrogant Ambassador",
+    age: 100
+  },
+  {
+    name: "Misunderstood Observer",
+    age: 2
+  },
+  {
+    name: "Unlucky Swami",
+    age: 77
+  }
+]);
